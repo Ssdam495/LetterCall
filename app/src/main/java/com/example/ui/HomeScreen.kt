@@ -65,10 +65,9 @@ fun HomeScreen(
     onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // Model letters: 'أ' and 'ر' featured first, followed by other letters for rich gameplay
+    // All 28 Arabic letters in correct pedagogical order with phonics examples and vibrant colors
     val letters = listOf(
         LetterItem("أ", "أَلِف", "أَسَد 🦁", Color(0xFFFF7043), Color(0xFFD84315)),
-        LetterItem("ر", "رَاء", "رُمَّان 🍎", Color(0xFF26A69A), Color(0xFF00695C)),
         LetterItem("ب", "بَاء", "بَطَّة 🦆", Color(0xFF42A5F5), Color(0xFF1565C0)),
         LetterItem("ت", "تَاء", "تُفَّاح 🍏", Color(0xFFAB47BC), Color(0xFF6A1B9A)),
         LetterItem("ث", "ثَاء", "ثَعْلَب 🦊", Color(0xFFFFA726), Color(0xFFE65100)),
@@ -76,9 +75,26 @@ fun HomeScreen(
         LetterItem("ح", "حَاء", "حِصَان 🐴", Color(0xFF29B6F6), Color(0xFF0277BD)),
         LetterItem("خ", "خَاء", "خَرُوف 🐑", Color(0xFFEC407A), Color(0xFFAD1457)),
         LetterItem("د", "دَال", "دُب 🐻", Color(0xFF8D6E63), Color(0xFF4E342E)),
+        LetterItem("ذ", "ذَال", "ذِئْب 🐺", Color(0xFFA1887F), Color(0xFF5D4037)),
+        LetterItem("ر", "رَاء", "رُمَّان 🍎", Color(0xFFEF5350), Color(0xFFC62828)),
+        LetterItem("ز", "زَاي", "زَرَافَة 🦒", Color(0xFFFFB74D), Color(0xFFEF6C00)),
         LetterItem("س", "سِين", "سَمَكَة 🐟", Color(0xFF26C6DA), Color(0xFF00838F)),
-        LetterItem("م", "مِيم", "مَوْز 🍌", Color(0xFFFFCA28), Color(0xFFF57F17)),
-        LetterItem("ن", "نُون", "نَحْلَة 🐝", Color(0xFF7E57C2), Color(0xFF4527A0))
+        LetterItem("ش", "شِين", "شَمْس ☀️", Color(0xFFFFCA28), Color(0xFFF57F17)),
+        LetterItem("ص", "صَاد", "صَقْر 🦅", Color(0xFF78909C), Color(0xFF37474F)),
+        LetterItem("ض", "ضَاد", "ضِفْدَع 🐸", Color(0xFF9CCC65), Color(0xFF558B2F)),
+        LetterItem("ط", "طَاء", "طَيَّارَة ✈️", Color(0xFF5C6BC0), Color(0xFF283593)),
+        LetterItem("ظ", "ظَاء", "ظَرْف ✉️", Color(0xFF8E24AA), Color(0xFF4A148C)),
+        LetterItem("ع", "عَيْن", "عَصْفُور 🐦", Color(0xFF26A69A), Color(0xFF00695C)),
+        LetterItem("غ", "غَيْن", "غَزَال 🦌", Color(0xFF7E57C2), Color(0xFF4527A0)),
+        LetterItem("ف", "فَاء", "فَرَاشَة 🦋", Color(0xFFF06292), Color(0xFFAD1457)),
+        LetterItem("ق", "قَاف", "قِطَّة 🐱", Color(0xFF42A5F5), Color(0xFF0D47A1)),
+        LetterItem("ك", "كَاف", "كَلْب 🐶", Color(0xFFFF7043), Color(0xFFBF360C)),
+        LetterItem("ل", "لَام", "لَيْمُون 🍋", Color(0xFFDCE775), Color(0xFF9E9D24)),
+        LetterItem("م", "مِيم", "مَوْز 🍌", Color(0xFFFFD54F), Color(0xFFFF8F00)),
+        LetterItem("ن", "نُون", "نَحْلَة 🐝", Color(0xFFBA68C8), Color(0xFF7B1FA2)),
+        LetterItem("هـ", "هَاء", "هَرَم 🔺", Color(0xFFFF8A65), Color(0xFFD84315)),
+        LetterItem("و", "وَاو", "وَرْدَة 🌸", Color(0xFFEC407A), Color(0xFF880E4F)),
+        LetterItem("ي", "يَاء", "يَد ✋", Color(0xFF4DD0E1), Color(0xFF0097A7))
     )
 
     // Sky to ice-blue gradient background matching Geometric Balance
